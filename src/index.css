@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+h1 {
+  font-family: "Roboto Slab", serif;
+}
+h2 {
+  font-family: "Nunito Sans", sans-serif;
+}
+.text-tiny {
+  font-size: 10px;
+}
+
+/* Add this CSS to your stylesheet or style section */
+/* // eslint-disable-next-line */
+.custom-slider {
+   & .MuiSlider-track {
+    background-color: #85AFFF;
+    border-color: #85AFFF;
+  }
+   & .MuiSlider-rail {
+    background-color: gray;
+  }
+  & .MuiSlider-thumb {
+    background-color: white;
+    border: 0;
+    height: 26px; /* Adjust the height of the thumb if needed */
+    width: 26px; /* Adjust the width of the thumb if needed */
+  }
+}
